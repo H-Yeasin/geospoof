@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev --port 3000",
-    "build": "node scripts/copy-geo-tz-data.mjs && node scripts/generate-sitemap.mjs && vite build",
+    "dev": "node init && vite dev --port 3000",
+    "build": "node init && node scripts/copy-geo-tz-data.mjs && node scripts/generate-sitemap.mjs && vite build",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "indexnow": "node scripts/ping-indexnow.mjs",
     "preview": "vite preview",
